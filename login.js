@@ -38,7 +38,6 @@ app.get('/', (req, res) => {
 	res.sendFile(path.join(__dirname, '/login.html'));
 });
 
-// http://localhost:3000/auth
 app.post('/auth', (req, res) => {
 	// Capture the input fields
 	let username = req.body.username;
